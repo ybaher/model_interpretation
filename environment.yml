@@ -1,0 +1,9 @@
+name: model_interp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scikit-learn
+  - jupyterlab
