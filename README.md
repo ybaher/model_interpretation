@@ -4,11 +4,11 @@ Daisy (Ying) Zhou, William Song, Yasaman Baher
 ## Project Description
 Creating machine learning models often involves writing redundant code, particularly when tuning hyperparameters and comparing performance across different models. This project aims to reduce that redundancy by streamlining these repetitive steps, making the model development process more efficient and time-effective. To achieve this, our project focuses on building reusable functions that, given user input, automatically return the optimal hyperparameters, the best-performing model, its accuracy score, and a corresponding confusion matrix—all in a single, unified workflow.
 ## List of Functions
-- ```FUNCTION_NAME``` <br>
-Index of the best parameter with the lowest regression metrics measuring score <br>
-- ```FUNCTION_NAME``` <br>
-Name of the best model <br>
-- ```FUNCTION_NAME``` <br>
-Combination of a table and confusion matrix <br>
-
-
+- ```param_tuning_summary``` <br>
+Create a summary of the hyperparameter tuning results and extract the best estimator. <br>
+- ```model_metric_compare``` <br>
+Create dataframe of metric results between models for comparisons.  <br>
+- ```model_evaluation_plotting``` <br>
+Creates standard classification metrics, creates a confusion matrix as a table, and creates a confusion matrix display object for visualization. <br>
+## Positioning in the Python Ecosystem
+This package is designed to effectively sit within the existing Python machine learning ecosystem, specifically the scikit-learn library for model training, hyperparameter tuning, and evaluation. While scikit-learn is a powerful library on its own, our functions aim to reduce repeated and manual comparisons between multiple models, something that scikit-learn lacks. Other packages such as mlxtend and yellowbrick offer visualization utilities for users; however, they tend to focus more on the visual aspects of models rather than providing a unified workflow. Our package targets this gap by combining hyperparameter tuning, model comparison, metric reporting, and confusion matrix generation into reusable functions, improving reproducibility and efficiency during model development.
